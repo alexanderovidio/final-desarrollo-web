@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './vistas/login/login.component';
 import { NuevoComponent } from './vistas/nuevo/nuevo.component';
@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'nuevo', component: NuevoComponent },
-  { path: 'editar', component: EditarComponent }
+  { path: 'editar/:id', component: EditarComponent }
 ];
 
 @NgModule({
@@ -18,4 +18,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [LoginComponent, NuevoComponent, EditarComponent, DashboardComponent]
+export const routingComponents = [LoginComponent, DashboardComponent, NuevoComponent, EditarComponent ]

@@ -1,7 +1,6 @@
 {
-  "/Api/*": {
-    "target": "http://192.168.0.25:45497",
-    "secure": false,
-    "logLevel": "debug"
+  "/Api": {
+    "target": "http://localhost:59412",
+    "secure": false
   }
 }
