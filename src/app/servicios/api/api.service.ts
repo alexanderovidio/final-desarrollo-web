@@ -60,4 +60,9 @@ export class ApiService {
     return this.http.delete<ResponseI>(direccion, Options);
   }
 
+  postInvoice(form:FacturaI):Observable<ResponseI>{
+    let direccion = this.url + 'Factura/';
+    return this.http.post <ResponseI>(direccion, form);
+  }
+
 }
